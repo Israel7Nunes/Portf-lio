@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/Minha-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <script src="main.js" defer></script>
+
+
+    <header>
+        <img src="imgs/Minha-logo-light.png" alt="Logo do site (versão clara)" class="logo"> 
+        
+        <h1>Meu Portfólio</h1>
+
+        <div class="navegacao">
+            <button onclick="navegacaoBox()" class="buttonNavegacao nPosition1" id="buttonNavegacao">Navegação</button>
+
+            <div class="box1 box1Position1" id="box1">
+                <a href="#topPage">Cabeçalho</a>
+                <a href="#sobreMim">Sobre Mim</a>
+                <a href="#meusProjetos">Projetos</a>
+                <a href="#contatos">Contato</a>
+            </div>
+        </div>
+
+        <div class="redesSociais">
+            <button onclick="redesBox()" class="buttonRedes hidden rPosition1" id="buttonRedes">Redes Sociais</button>
+
+            <div class="box2 box2Position1" id="box2">
+                <img src="imgs/linked-in-2668700_1920-removebg-preview.png" alt="Logo do Linkedin"><a href="https://www.linkedin.com/in/israel-salvalaio-nunes-a4b8b7258/">Linkedin</a>
+                <img src="imgs/github.png" alt="Logo do Git Hub"><a href="https://github.com/Israel7Nunes">GitHub</a>
+            </div>
+        </div>
+
+        <button class="buttonMenu" onclick="menu()" id="buttonMenu"><img src="imgs/barra-menu.png" alt="" class="imgMenu"></button>
+
+    </header>
+
+    <div class="topPage" id="topPage">
+        <img src="imgs/Foto-minha.png" alt="Uma foto minha enquadrada num celular">
+
+        <div class="boxTP">
+            <h2>ISRAEL SALVALAIO NUNES</h2>
+            <p>"O que eu sei fazer eu faço. O que eu não sei, eu aprendo e faço!"</p>
+        </div>
+    </div>
+
+    <div id="sobreMim"></div>
+
+    <div class="miniContainer1">
+        <div class="left" data-aos="fade-left" data-aos-duration="1500">
+            <h2>Sobre Mim</h2>
+            <p>Eu me chamo Israel Salvalaio Nunes, sou um jovem de 18 anos fazendo o curso de Desenvolvimento Web Full-Stack da ONG Instituto da <b>Oportunidade Social (IOS)</b> e estudando HTML, CSS e JavaScript. Eu semprei gostei de tecnologia, principalmente quando se tratava de jogos, então quando eu descobri sobre programação de jogos, logo tentei fazer os meus próprios, mas infelizmente o único computador que eu tinha acesso não possuia poder computacional para "rodar" os programas necessários. Mesmo não podendo programar, eu continuava a ver sobre alguns assuntos de programação, como, por exemplo, um canal do Youtube chamado <b>Universo Programado.</b> Avançando um pouco no tempo, no ano de 2023, eu consegui uma vaga do curso do IOS em que estou agora, finalmente tive oportunidade de poder aprender e fazer programação (mesmo que não seja na área inícial). Um pouco mais embaixo você poderá ver o meu progresso durante as aulas do curso na seção "Meus Projetos".</p>
+        </div>
+
+        <div class="right" data-aos="fade-right" data-aos-duration="1500">
+            <h2>Minhas Habilidades</h2>
+            <div class="rightImgs">
+                <img src="imgs/logo-html5.png" alt="Logo do HTML5">
+                <img src="imgs/logo-css3.png" alt="Logo do CSS3">
+                <img src="imgs/logo-JS.png" alt="Logo do Java Script">
+            </div>
+        </div>
+    </div>
+
+        <h2 class="projetos" data-aos="fade-up">Meus Projetos</h2>
+        <div id="meusProjetos"></div>
+
+
+    <div class="container">
+        <div class="group1 groups">
+            <img src="imgs/Textos Brabos.png" alt="Imagem do site 'Textos Brabos'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">Textos Brabos</h3>
+                <p class="p1">Este foi o primeiro projeto feito dentro do Curso de Desenvolvimento Web Full-Stack da ONG IOS. Nós (os alunos) fomos incentivados a fazer uma página da forma que a gente quisesse utilizando o conhecimento obtido na primeira aula. O resultado é esse.</p>
+                <p>Linguagens do Projeto: HTML e CSS</p>
+                <a href="https://github.com/Israel7Nunes/TEST">Link para o Repositório</a><br>
+                <a href="https://israel7nunes.github.io/TEST/">Link do Site</a>
+            </div>
+        </div>
+
+        <div class="group2 groups">
+            <img src="imgs/Katanacel.png" alt="Imagem do site 'Katanacel'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">Katanacel</h3>
+                <p class="p1">Esta página foi feita para um trabalho em grupo (no caso eu fiz em dupla) do curso. O objetivo era inventar um produto e apresentar para a turma com o objetivo de convence-los à comprar nosso produto. Em resumo, a Katanacel (o produto) seria um pincel em formato de katana.</p>
+                <p>Linguagens do Projeto: HTML e CSS</p>
+                <a href="https://github.com/Israel7Nunes/Katanacel_final_version">Link do Repositório</a><br>
+                <a href="https://israel7nunes.github.io/Katanacel_final_version/">link do Site</a>
+            </div>
+        </div>
+
+        <div class="group3 groups">
+            <img src="imgs/Café IOS.png" alt="Imagem do site 'Café IOS'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">Café IOS</h3>
+                <p class="p1">O objetivo do projeto era fazer um site para um café/lanchonete para apresentar o tal café/lanchonete e mostrar alguns de seus produtos. Para a paleta de cores, eu peguei algo que lembrasse o grão de café.</p>
+                <p>Linguagens do Projeto: HTML e CSS</p>
+                <a href="https://github.com/Israel7Nunes/Caf-IOS">Link para o Repositório</a><br>
+                <a href="https://israel7nunes.github.io/Caf-IOS/">Link do Site</a>
+            </div>
+        </div>
+
+        <div class="group4 groups">
+            <img src="imgs/ONE Home.png" alt="Imagem do site 'ONE Home'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">ONE Home</h3>
+                <p class="p1">Este projeto ele é uma espécie de mini TCC. O objetivo era fazer (em grupo) um site de uma empresa fictícia, por nossos familiares nele de alguma forma e apresentar o site para os alunos e seus familiares. A minha parte no site foi fazer minha página e fazer as imagens das ofertas no ínicio da página principal.</p>
+                <p>Linguagens do Projeto: HTML e CSS</p>
+                <a href="https://github.com/Israel7Nunes/Projeto-Fam-lia">Link para o Repositório</a><br>
+                <a href="https://israel7nunes.github.io/Projeto-Fam-lia/index.html">Link do Site</a>
+            </div>
+        </div>
+        
+        <div class="group5 groups">
+            <img src="imgs/Futuro do Desenvolvimento Web.png" alt="Imagem do site 'Futuro do Desenvolvimento Web'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">Futuro do Desenvolvimento Web</h3>
+                <p class="p1">Este foi um trabalho com o tema "Como será o Desenvolvimento Web no futuro?".</p>
+                <p>HTML, CSS e um pouquinho de Script</p>
+                <a href="https://github.com/Israel7Nunes/Futuro-do-JavaScript-Atividade">Link para o Repositório</a><br>
+                <a href="https://israel7nunes.github.io/Futuro-do-JavaScript-Atividade/">Link do Site</a>
+            </div>
+        </div>
+
+        <div class="group6 groups">
+            <img src="imgs/Lista de Tarefas.png" alt="Imagem do site 'Lista de Tarefas'" data-aos="zoom-in-up">
+
+            <div class="texts">
+                <h3 data-aos="fade-left">Lista de Tarefas</h3>
+                <p class="p1">Este site foi fruto de uma aula de JavaScript em que foi ensinado aos alunos do curso à como fazer tabelas (com JS), depois fomos liberados para estilizar o site.</p>
+                <p>HTML, CSS e JavaScript</p>
+                <a href="https://github.com/Israel7Nunes/Lista-de-Tarefas">Link para o Repositório</a><br>
+                <a href="https://israel7nunes.github.io/Lista-de-Tarefas/">Link do Site</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="final">
+            <p>Obrigado pela visita!</p>
+            <p>&copy; Israel Salvalaio Nunes</p>
+        </div>
+        <div class="contatos" id="contatos">
+            <img src="imgs/linked-in-2668700_1920-removebg-preview.png" alt="Logo do Linkedin"><a href="https://www.linkedin.com/in/israel-salvalaio-nunes-a4b8b7258/">Linkedin</a>
+            <img src="imgs/github.png" alt="Logo do Git Hub"><a href="https://github.com/Israel7Nunes">GitHub</a>
+        </div>
+        <div class="referencias">
+            <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/ayub-irawan" title="Ayub Irawan"> Ayub Irawan </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+            <a href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</a><br>
+            <a href="icons8.com.br">Icons by Icon8</a>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
